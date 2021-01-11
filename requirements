@@ -1,0 +1,4 @@
+pip install Django==3.1.4
+pip install Scrapy==2.4.1
+pip install scrapy-djangoitem==1.1.1
+python -m spacy download el_core_news_lg

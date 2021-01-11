@@ -1,0 +1,33 @@
+{
+  "lang":"el",
+  "name":"crime-analysis",
+  "version":"0.0.0",
+  "spacy_version":">=2.3.5",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"1d4b1dea2",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":"spacy_pretrained_vectors"
+  },
+  "pipeline":[
+    "ner"
+  ],
+  "factories":{
+    "ner":"ner"
+  },
+  "labels":{
+    "ner":[
+      "\u0395\u0398\u039d\u0399\u039a\u039f\u03a4\u0397\u03a4\u0391",
+      "\u0397\u039b\u0399\u039a\u0399\u0391",
+      "\u0397\u039c\u0395\u03a1\u039f\u039c\u0397\u039d\u0399\u0391",
+      "\u0398\u03a5\u039c\u0391",
+      "\u0398\u03a5\u03a4\u0397\u03a3"
+    ]
+  }
+}
