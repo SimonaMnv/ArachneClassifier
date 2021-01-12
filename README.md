@@ -56,7 +56,7 @@ If you intent to change the structure of the data (fields) then edit the model i
     
         
     
-To initiate the scraping run: ```python scrapy crawl newsbomb```, the text is saved in a mongo db (djongo is used).
+To initiate the scraping run: ```python scrapy crawl newsbomb```, the text is saved in a **mongo db** (djongo is used to communicate with the django model).
 Then, index the djongo database with elasticsearch, run: ```python
 python manage.py search_index --rebuild```
 now that the data is indexed from elastic, go to: 
