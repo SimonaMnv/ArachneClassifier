@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Pre-trained model](#technologies)
-* [Custom-trained model](#Custom-trained model)
+* [Custom-trained model](#custom-trained-model)
 
 ## General info
 
