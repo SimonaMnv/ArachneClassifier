@@ -47,7 +47,7 @@ To crawl different pages go to:
     └── spiders
 and edit the spider.
 
-* if you intent to change the structure of the data (fields) then edit the model in:
+if you intent to change the structure of the data (fields) then edit the model in:
     
     .
     ├── api 
@@ -58,7 +58,7 @@ and edit the spider.
 * to initiate the scraping run: ```python scrapy crawl newsbomb```, the text is saved in a mongo db (djongo is used) 
 * then, index the djongo database with elasticsearch, run: ```python
 python manage.py search_index --rebuild```
-* now that the data is indexed from elastic, go to: 
+now that the data is indexed from elastic, go to: 
 
 
     ├── nlp_classification
