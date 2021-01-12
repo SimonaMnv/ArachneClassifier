@@ -36,6 +36,7 @@ python manage.py search_index --rebuild
 to create the elasticsearch analyzers with which we will preprocess each article. Each article is tokenized, lowercased, stemmed and stop words are removed from it. 
 
 Use ``dash/app.py`` to open up a flask api where you paste a crime article and it classifies the type.
+![sample](https://user-images.githubusercontent.com/59322298/104375932-daa37700-552c-11eb-8b39-6b1244414a0b.PNG)
 
 ## Custom-trained model
 To crawl different pages go to:
