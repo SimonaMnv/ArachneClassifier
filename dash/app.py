@@ -121,16 +121,13 @@ def summarize(n_clicks, original_text):
     classification_SVM = loaded_model.predict(test_unknown_Tfidf)
 
     results = {
-        'ΑΛΛΟ ΕΓΚΛΗΜΑ': 0, 'ΔΟΛΟΦΟΝΙΑ': 1, 'ΛΗΣΤΕΙΑ/ΚΛΟΠΗ': 2, 'ΝΑΡΚΩΤΙΚΑ': 3,
-        'ΣΕΞΟΥΑΛΙΚΟ ΕΓΚΛΗΜΑ': 4, 'ΤΡΟΜΟΚΡΑΤΙΚΗ ΕΠΙΘΕΣΗ': 5
+        'ΑΛΛΟ ΕΓΚΛΗΜΑ/OTHER': 0, 'ΔΟΛΟΦΟΝΙΑ/MURDER': 1, 'ΛΗΣΤΕΙΑ/ΚΛΟΠΗ/THEFT': 2,
+        'ΝΑΡΚΩΤΙΚΑ/DRUGS': 3, 'ΣΕΞΟΥΑΛΙΚΟ ΕΓΚΛΗΜΑ/SEX CRIME': 4, 'ΤΡΟΜΟΚΡΑΤΙΚΗ ΕΠΙΘΕΣΗ/TERRORISM': 5
     }
     classification_result = ""
+    classification_result = [crime for (crime, label) in results.items() if classification_SVM == label]
 
-    for crime, label in results.items():
-        if classification_SVM == label:
-            classification_result = crime
-
-    return classification_result
+    return str(classification_result[0])
 
 
 if __name__ == "__main__":

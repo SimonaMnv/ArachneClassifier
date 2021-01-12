@@ -29,10 +29,3 @@ class ArticleDocument(Document):
 
     class Django:
         model = ArticleOfInterest
-
-
-# sync django / elastic:
-# 1. create elasticsearchapp indexes: python manage.py elasticsearchapp --create -f
-# 2. sync data: python manage.py elasticsearchapp --populate -f
-
-# TODO: python manage.py search_index --rebuild

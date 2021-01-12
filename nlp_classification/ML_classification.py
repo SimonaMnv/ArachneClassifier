@@ -26,6 +26,7 @@ def export_dataset_df():
     df.to_csv('../dfs/newsbomb_articles_train.csv', encoding='utf-8-sig', index=False)
 
 
+# TODO: uncomment for custom-training
 # export_dataset_df()
 corpus = pd.read_csv('../dfs/newsbomb_articles_train.csv')
 
