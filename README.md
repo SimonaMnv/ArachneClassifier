@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Pre-trained model](#technologies)
-* [Custom training](#setup)
+* [Custom-trained model](#setup)
 
 ## General info
 
@@ -41,16 +41,20 @@ Use ``dash/app.py`` to open up a flask api where you paste a crime article and i
 To crawl different pages go to:
     
     
+    . 
     ├── crawling
     ├── crawling
     └── spiders
 and edit the spider.
 
 * if you intent to change the structure of the data (fields) then edit the model in:
-
-
+    
+    .
     ├── api 
     └── article_models
+    
+        
+    
 * to initiate the scraping run: ```python scrapy crawl newsbomb```, the text is saved in a mongo db (djongo is used) 
 * then, index the djongo database with elasticsearch, run: ```python
 python manage.py search_index --rebuild```
