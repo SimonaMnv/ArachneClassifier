@@ -36,3 +36,14 @@ to create the elasticsearch analyzers with which we will preprocess each article
 
 Use ``dash/app.py`` to open up a flask api where you paste a crime article and it classifies the type.
 
+## Custom-trained model
+To crawl different pages go to:
+    .
+    ├── build                   # Compiled files (alternatively `dist`)
+    ├── docs                    # Documentation files (alternatively `doc`)
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    ├── test                    # Automated tests (alternatively `spec` or `tests`)
+    ├── tools                   # Tools and utilities
+    ├── LICENSE
+    └── README.md
+
