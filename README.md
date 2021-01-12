@@ -22,6 +22,7 @@ Currently it crawls pages from a Greek news site, specifically, crime articles a
 | Scrapy| 2.4.1|
 | Spacy |2.3.5 |
 | Django| 3.1.4|
+| Djongo| 1.3.3|
 
 ### Requirements
 
