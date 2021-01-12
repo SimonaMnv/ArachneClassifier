@@ -23,6 +23,10 @@ Currently it crawls pages from a Greek news site, specifically, crime articles a
 | Spacy |2.3.5 |
 | Django| 3.1.4|
 
+### Requirements
+
+install frozen-requirements from the main folder and requirements from the dash subfolder
+
 ## Pre-trained model
 To use the pre-trained model that classifies Greek article crime types install and set up elasticsearch and  run: 
 ```python
@@ -30,4 +34,5 @@ python manage.py search_index --rebuild
 ```
 to create the elasticsearch analyzers with which we will preprocess each article. Each article is tokenized, lowercased, stemmed and stop words are removed from it. 
 
-Use dash/app.py to open up a flask api where you paste a crime article and it classifies the type.
+Use ``dash/app.py`` to open up a flask api where you paste a crime article and it classifies the type.
+
