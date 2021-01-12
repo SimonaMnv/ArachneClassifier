@@ -1,0 +1,107 @@
+#company .VirtualizedSelectFocusedOption {
+    background-color: #8c97a9;
+    color: #ffffff;
+}
+
+.Select-control {
+    background-color: #8c97a9 !important;
+}
+
+.VirtualizedSelectOption {
+    background-color: #8c97a9;
+    color: #8c97a9;
+}
+
+.VirtualizedSelectFocusedOption {
+    background-color: #8c97a9;
+    font-size: 18px;
+    color: #8c97a9;
+}
+
+#users_companies_table {
+    color: #ffffff;
+}
+
+.label {
+    color: #fff;
+}
+
+div.hZkeSi {
+    font-size: 18px;
+}
+
+#app-container {
+    height: auto;
+}
+
+.daq-leddisplay--light {
+    text-align: center;
+}
+
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+
+
+header {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
+#info {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #074E8C;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+#wrapper {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+#both-coverages div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#both-coverages div::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(146, 224, 255, 0.65);
+}
+
+#both-coverages div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+#risk_table div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#risk_table div::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(146, 224, 255, 0.75);
+}
+
+#risk_table div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
