@@ -48,7 +48,7 @@ To crawl different pages go to:
     └── spiders
 and edit the spider.
 
-if you intent to change the structure of the data (fields) then edit the model in:
+If you intent to change the structure of the data (fields) then edit the model in:
     
     .
     ├── api 
@@ -56,8 +56,8 @@ if you intent to change the structure of the data (fields) then edit the model i
     
         
     
-to initiate the scraping run: ```python scrapy crawl newsbomb```, the text is saved in a mongo db (djongo is used) 
-then, index the djongo database with elasticsearch, run: ```python
+To initiate the scraping run: ```python scrapy crawl newsbomb```, the text is saved in a mongo db (djongo is used).
+Then, index the djongo database with elasticsearch, run: ```python
 python manage.py search_index --rebuild```
 now that the data is indexed from elastic, go to: 
 
@@ -66,5 +66,5 @@ now that the data is indexed from elastic, go to:
     └── ML_classification
     
 and uncomment the ```export_dataset_df()``` function. This gathers all the **analyzed** data from elastic and exports it to a dataframe.
-the model is trained with SVM and exported.
-open ```dash/app.py``` to test the custom classification.
+The model is trained with SVM and exported.
+Open ```dash/app.py``` to test the custom classification.
