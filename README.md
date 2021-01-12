@@ -22,3 +22,12 @@ Currently it crawls pages from a Greek news site, specifically, crime articles a
 | Scrapy| 2.4.1|
 | Spacy |2.3.5 |
 | Django| 3.1.4|
+
+## Pre-trained model
+To use the pre-trained model that classifies Greek article crime types install and set up elasticsearch and  run: 
+```python
+python manage.py search_index --rebuild
+```
+to create the elasticsearch analyzers with which we will preprocess each article. Each article is tokenized, lowercased, stemmed and stop words are removed from it. 
+
+Use dash/app.py to open up a flask api where you paste a crime article and it classifies the type.
